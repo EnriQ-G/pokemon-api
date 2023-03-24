@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv')
 const port = process.ENV.PORT || 3000;
 const routerApi = require('./routes/main.routes');
+
 
 app.use(express.json());
 app.listen(port, () => {
